@@ -1,19 +1,24 @@
-import java.util.ArrayList;
+
 
 
 public class Calculadora implements iCalculadora{
 
 	
 
-	private String expresion;
-
 	private Pila <Double> operacion;
 	
 
+	/**
+	 * Constructor
+	 */
 	public Calculadora(){
 		operacion = new Pila<Double>();	
 	}
 	
+	/** 
+	 * @param String. Es una línea de texto con los números y las operaciones a realizar
+	 * Devuelve el resultado en forma double
+	 */
 	public double operar(String n){
 		
 		for (int i=0; i<n.length(); i++) {
@@ -79,8 +84,12 @@ public class Calculadora implements iCalculadora{
 
 
 
+	
 	@Override
-
+	/* 
+	 * Implementa el método suma de iCalculadora
+	 * @param double a, b. Números a operar
+	 */
 	public double suma(double a, double b) {
 
 		return a + b;
@@ -90,7 +99,10 @@ public class Calculadora implements iCalculadora{
 
 
 	@Override
-
+	/* 
+	 * Implementa el método resta de iCalculadora
+	 * @param double a, b. Números a operar
+	 */
 	public double resta(double a, double b) {
 
 		return a - b;
@@ -100,7 +112,10 @@ public class Calculadora implements iCalculadora{
 
 
 	@Override
-
+	/* 
+	 * Implementa el método multiplicación de iCalculadora
+	 * @param double a, b. Números a operar
+	 */
 	public double multiplicacion(double a, double b) {
 
 		return a * b;
@@ -110,7 +125,10 @@ public class Calculadora implements iCalculadora{
 
 
 	@Override
-
+	/* 
+	 * Implementa el método division de iCalculadora
+	 * @param double a, b. Números a operar
+	 */
 	public double division(double a, double b) {
 
 		return a / b;
