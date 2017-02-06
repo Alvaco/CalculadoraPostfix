@@ -1,19 +1,22 @@
 
 public interface iPila<E>{
-
-		
-
-		public void push(E algo);
-
-		
-
-		public E pop();
-
-		
-
-		public boolean isEmpty();
-
+	
+	/**
+	 * @param algo
+	 * Ingresa un elemento a un objeto
+	 */
+	public void push(E algo);
+	
+	/**
+	 * @return un elemento del final de una lsita
+	 */
+	public E pop();
+	
+	/**
+	 * @return true si el objeto está vacío
+	 */
+	public boolean isEmpty();
+	
 }
-
 
 
