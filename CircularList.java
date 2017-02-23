@@ -1,4 +1,4 @@
-public CircularList<E> extends abstractList<E>{
+public class CircularList<E> extends AbstractList<E>{
 
 protected Node<E> tail; 
 protected int count;
