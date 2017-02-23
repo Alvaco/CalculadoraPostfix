@@ -1,4 +1,4 @@
-public DoublyLinkedList<E> extends abstractList<E>{
+public class DoublyLinkedList<E> extends AbstractList<E>{
 protected int count;
 protected DoublyLinkedNode<E> head;
 protected DoublyLinkedNode<E> tail;
@@ -41,11 +41,11 @@ public E removeLast()
 // post: removes value from tail of list
 {
    DoublyLinkedNode<E> temp = tail;
-   tail = tail.previous();
+   tail = tail.previousElement;
    if (tail == null) {
        head = null;
    } else {
-       tail.setNext(null);
+       tail.next();
    }
    count--;
    return temp.value();
